@@ -1,4 +1,4 @@
-package com.example;
+package com.example.Pertemuan3;
 import java.util.Scanner;
 
 public class tokenization {
