@@ -1,0 +1,46 @@
+[{
+    "status": {
+     "code": 0,
+     "description": "OK"
+    },
+    "servicePackage": {
+     "service": "Reguler (REG)",
+     "value": 15000 
+    },
+    "city": {
+     "origin": "BANDUNG",
+     "destination":"JAKARTA"
+    },
+    "weight":2,
+    "quantity":1,
+    "priceItem": 80000,
+    “productName”: “Celana Jeans ”},{
+    "status": {
+     "code": 0,
+     "description": "OK"
+    },
+    "servicePackage": {
+     "service": "Reguler (REG)",
+     "value": 26000
+    },
+    "city": {
+     "origin": "BANDUNG",
+     "destination":"SURABAYA"
+    },
+    "weight":2, "quantity":2,
+    "priceItem": 90000,
+    “productName”: “Kemeja Lengan Panjang”
+    }]
+
+1. Buatlah kelas yang dapat menangani data json terlampir!
+2. Pada kelas Delivery terdapat relasi dengan kelas Status, ServicePackage, City. Menurut anda jenis relasi apa yang tepat diterapkan pada kelas berikut?
+3. Terdapat abstract class paymentService yang berisi method getPaymentStatus, getPaymentMethod, dimana pembayaran dan pengiriman bisa melalui ovo, qris dan cash, lengkapi diagram kelas tersebut dengan menambahkan abstract class paymentService
+4. Terapkan clena code pada program yang dibuat! Jelaskan teknik clean code apa saja yang diterapkan!
+5. Pada main program tuliskan code untuk menampilkan jumlah produk yang harus dibayarkan beserta ongkos kirimnya dengan format table berikut : productName | quantity | weight | destination | servicePackage | serviceValue | Total | paymentMethod | PaymentStatus
+
+
+sebagai gambaran main class berisi potongan kode berikut:
+Gson gson = new Gson();
+
+Delivery[] delivery = gson.fromJson(new
+FileReader(JSON_FILE),Delivery[].class)
